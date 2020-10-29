@@ -5,7 +5,7 @@ function addTask() {
   } else {
     let button = document.createElement("button");
     let table = document.getElementById("tasksTable");
-    let rowCount = table.rows.length;
+    let rowCount = table.rows.length - 1;
     let row = table.insertRow();
     let cel1 = row.insertCell(0);
     let cel2 = row.insertCell(1);
