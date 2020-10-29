@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Memory game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Memory Game</h1>
+    <div id="controlSection">
+      <button onclick="startGame();">START</button>
+      <p>
+        Once you click start, order of the images will be randomized and biden.
+        You will have to memory the position of images and find at least one
+        pair.
+      </p>
+      <p>
+        <strong id="timeing">Are you ready ?</strong>
+      </p>
+    </div>
+    <div class="container">
+      <div class="row" id="upperRow">
+        <div class="image" id="img1">
+          <img src="diamond.jpg" alt="Diaomond" onclick="checking(1);" />
+        </div>
+        <div class="image" id="img2">
+          <img src="thorse.jpg" alt="" onclick="checking(2);" />
+        </div>
+        <div class="image">
+          <img src="mushrooms.jpg" alt="" onclick="checking(3);" />
+        </div>
+      </div>
+
+      <div class="row" id="lowerRow">
+        <div class="image" id="img3">
+          <img src="diamond.jpg" alt="Diaomond" onclick="checking(1);" />
+        </div>
+        <div class="image" id="img4">
+          <img src="thorse.jpg" alt="" onclick="checking(2);" />
+        </div>
+        <div class="image">
+          <img src="mushrooms.jpg" alt="" onclick="checking(3);" />
+        </div>
+      </div>
+    </div>
+
+    <script src="code.js"></script>
+  </body>
+</html>
